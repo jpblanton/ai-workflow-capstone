@@ -1,0 +1,18 @@
+session_name: ai-workflow-capstone
+start_directory: ~/ai-workflow-capstone/
+shell_command_before:
+  - 'export FLASK_APP=capstone-app.py'
+windows:
+  - window_name: main_python
+    layout: main-vertical
+    panes:
+      - shell_command:
+        - vim capstone-script.py
+        focus: true
+      - shell_command:
+        - source ~/.bashrc
+  - window_name: jupyter
+    panes:
+      - shell_command:
+        - source ~/.bashrc
+        - jupy
